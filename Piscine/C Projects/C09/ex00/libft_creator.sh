@@ -1,16 +1,17 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    libft_creatoe.sh                                   :+:      :+:    :+:    #
+#    libft_creator.sh                                   :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: malmarzo <malmarzo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/10 06:59:03 by malmarzo          #+#    #+#              #
-#    Updated: 2024/09/10 06:59:51 by malmarzo         ###   ########.fr        #
+#    Updated: 2024/09/11 12:06:58 by malmarzo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-rm -f libft.a
-find . -name "*.c" -type f -maxdepth 1 -exec gcc -Wall -Werror -Wextra -c {} \;
-ar -rcs libft.a *.o
-find . -name "*.o" -type f -maxdepth 1 -delete
+#!/bin/bash
+
+cc -Wall -Wextra -Werror -c *.c
+ar rcs libft.a *.o
+rm *.o
