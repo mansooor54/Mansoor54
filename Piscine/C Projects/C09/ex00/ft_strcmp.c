@@ -6,18 +6,18 @@
 /*   By: malmarzo <malmarzo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 06:35:18 by malmarzo          #+#    #+#             */
-/*   Updated: 2024/09/10 06:52:06 by malmarzo         ###   ########.fr       */
+/*   Updated: 2024/09/11 11:27:59 by malmarzo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	ft_strcmp(char *str1, char *str2)
 {
-	int i;
+	int	i;
 
 	i = 0;
-	while(str1[i] == str2[i] && (str1[i] != '\0' || str2[i] != '\0'))
+	while (str1[i] == str2[i] && (str1[i] != '\0' || str2[i] != '\0'))
 	{
 		i++;
 	}
-	return(str1[i] - str2[i]);
+	return (str1[i] - str2[i]);
 }

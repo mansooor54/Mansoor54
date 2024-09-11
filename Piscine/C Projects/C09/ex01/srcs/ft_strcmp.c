@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ecaceres <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: malmarzo <malmarzo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/12 11:47:52 by ecaceres          #+#    #+#             */
-/*   Updated: 2019/08/12 11:47:52 by ecaceres         ###   ########.fr       */
+/*   Updated: 2024/09/11 11:03:00 by malmarzo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,5 @@ int	ft_strcmp(char *s1, char *s2)
 		s1++;
 		s2++;
 	}
-	return (*(unsigned char*)s1 - *(unsigned char*)s2);
+	return (*(unsigned char *)s1 - *(unsigned char *)s2);
 }

@@ -5,12 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: malmarzo <malmarzo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/10 11:18:00 by malmarzo          #+#    #+#             */
-/*   Updated: 2024/09/10 11:40:42 by malmarzo         ###   ########.fr       */
+/*   Created: 2019/08/12 13:59:15 by ecaceres          #+#    #+#             */
+/*   Updated: 2024/09/11 11:24:24 by malmarzo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdbool.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 bool	is_char_in_string(char c, char *set)
@@ -97,7 +98,8 @@ char	**ft_split(char *str, char *charset)
 	{
 		if (is_char_in_string(*str, charset))
 			next = str;
-		if ((size = next - previous) > 1)
+		size = next - previous;
+		if (size > 1)
 			index += add_part(&array[index], previous, size, charset);
 		if (*str == '\0')
 			break ;
@@ -107,3 +109,24 @@ char	**ft_split(char *str, char *charset)
 	array[index] = 0;
 	return (array);
 }
+
+// int	main(int argc, char **argv)
+// {
+// 	int		index;
+// 	char	**split;
+
+// 	argc = argc + 0;
+// 	printf("count occ: %d\n", count_occur("  a  b   b   ", " a   "));
+// 	// split = ft_split("ImtmVrV6Ov8QrkGGUglBy7Vgsu iIsdl5XyT35Czv4xeu",
+// 	// "yenORYQ");
+// 	split = ft_split(argv[1], argv[2]);
+// 	index = 0;
+// 	printf("tab start\n");
+// 	while (split[index])
+// 	{
+// 		printf("tab[%d]: $%s$\n", index, split[index]);
+// 		fflush(stdout);
+// 		index++;
+// 	}
+// 	printf("tab end\n");
+// }

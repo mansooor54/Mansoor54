@@ -6,16 +6,16 @@
 /*   By: malmarzo <malmarzo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 06:50:36 by malmarzo          #+#    #+#             */
-/*   Updated: 2024/09/10 06:56:14 by malmarzo         ###   ########.fr       */
+/*   Updated: 2024/09/11 11:01:45 by malmarzo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	int i;
-	
+	int	i;
+
 	i = 0;
-	while(str[i])
+	while (str[i])
 		i++;
-	return(i);
+	return (i);
 }

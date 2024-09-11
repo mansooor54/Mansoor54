@@ -6,12 +6,11 @@
 /*   By: malmarzo <malmarzo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 06:25:27 by malmarzo          #+#    #+#             */
-/*   Updated: 2024/09/10 06:51:14 by malmarzo         ###   ########.fr       */
+/*   Updated: 2024/09/11 11:01:29 by malmarzo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
-	
